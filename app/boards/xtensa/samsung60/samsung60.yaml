@@ -1,0 +1,16 @@
+identifier: samsung60
+name: SAMSUNG60
+type: mcu
+arch: xtensa
+toolchain:
+  - zephyr
+  - espressif
+supported:
+  - gpio
+  - i2c
+  - ble
+  - ieee802154
+  - watchdog
+  - uart
+  - pinmux
+  - nvs

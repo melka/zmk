@@ -1,0 +1,10 @@
+file_format: "1"
+id: samsung60
+name: SAMSUNG60
+type: board
+arch: xtensa
+features:
+  - keys
+outputs:
+  - ble
+url: https://mechwild.com

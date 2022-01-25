@@ -1,0 +1,41 @@
+# Copyright (c) 2021 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config BOARD
+	default "esp32"
+	depends on BOARD_ESP32
+
+config ZMK_KEYBOARD_NAME
+	default "SAMSUNG60"
+
+config ENTROPY_ESP32_RNG
+	default y if ENTROPY_GENERATOR
+
+config ZMK_USB
+	default n
+
+if BT
+
+config HEAP_MEM_POOL_SIZE
+	default 16384
+
+config ENTROPY_GENERATOR
+	default y
+
+choice BT_HCI_BUS_TYPE
+	default BT_ESP32
+endchoice
+
+endif # BT
+
+config ZMK_SLEEP
+	default n
+
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default n
+
+config ZMK_BATTERY_VOLTAGE_DIVIDER
+	default n
