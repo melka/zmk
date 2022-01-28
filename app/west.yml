@@ -6,12 +6,14 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: melka
+      url-base: https://github.com/melka
     - name: microsoft
       url-base: https://github.com/microsoft
   projects:
     - name: zephyr
-      remote: petejohanson
-      revision: v2.7.0+rp2040+zmk-fixes
+      remote: melka
+      revision: v2.7.0+rp2040+xtensa+zmk-fixes
       clone-depth: 1
       import:
         # TODO: Rename once upstream offers option like `exclude` or `denylist`
