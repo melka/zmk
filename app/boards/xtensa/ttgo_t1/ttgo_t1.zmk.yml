@@ -1,6 +1,6 @@
 file_format: "1"
-id: samsung60
-name: SAMSUNG60
+id: ttgo_t1
+name: TTGO-T1
 type: board
 arch: xtensa
 features:

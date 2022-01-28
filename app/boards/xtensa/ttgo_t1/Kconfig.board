@@ -2,5 +2,5 @@
 # SPDX-License-Identifier: MIT
 
 config BOARD_ESP32
-	bool "SAMSUNG60"
+	bool "TTGO-T1"
 	depends on SOC_ESP32

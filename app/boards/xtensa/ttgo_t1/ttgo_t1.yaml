@@ -1,5 +1,5 @@
-identifier: samsung60
-name: SAMSUNG60
+identifier: ttgo_t1
+name: TTGO-T1
 type: mcu
 arch: xtensa
 toolchain:

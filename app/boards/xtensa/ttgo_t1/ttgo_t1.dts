@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-	model = "SAMSUNG60";
-	compatible = "samsung60";
+	model = "TTGO-T1";
+	compatible = "ttgo_t1";
 	aliases {
 		uart-0 = &uart0;
 		i2c-0 = &i2c0;

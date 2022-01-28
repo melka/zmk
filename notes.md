@@ -22,9 +22,7 @@ west espressif install
 west espressif update
 
 export ZEPHYR_TOOLCHAIN_VARIANT=espressif
-export ESPRESSIF_TOOLCHAIN_PATH="/Users/melka/.espressif/tools/zephyr"
-
-export PATH="${HOME}/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/:$PATH" 
+export ESPRESSIF_TOOLCHAIN_PATH="${HOME}/.espressif/tools/zephyr"
 
 west build -p -b esp32 samples/bluetooth/peripheral_hids
 west flash --esp-baud-rate 460800
