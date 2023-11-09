@@ -1,0 +1,17 @@
+identifier: esp32keys
+name: ESP-32
+type: mcu
+arch: xtensa
+toolchain:
+  - zephyr
+supported:
+  - gpio
+  - watchdog
+  - uart
+  - nvs
+  - pwm
+  - kscan
+testing:
+  ignore_tags:
+    - net
+    - bluetooth

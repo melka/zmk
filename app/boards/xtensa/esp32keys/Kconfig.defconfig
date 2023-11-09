@@ -1,0 +1,34 @@
+# ESP32 board configuration
+
+# Copyright (c) 2017 Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_ESP32KEYS
+
+config BOARD
+	default "esp32keys"
+	depends on BOARD_ESP32
+
+config ZMK_KEYBOARD_NAME
+    default "ESP32Keys"
+
+config ZMK_KSCAN_MATRIX_POLLING
+    default y
+
+config BT
+	default y
+
+config ZMK_BLE
+	default y
+
+config HEAP_MEM_POOL_SIZE
+	default 16384
+
+config ENTROPY_GENERATOR
+	default y
+
+choice BT_HCI_BUS_TYPE
+	default BT_ESP32
+endchoice
+
+endif # BOARD_ESP32KEYS

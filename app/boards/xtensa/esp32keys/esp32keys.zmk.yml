@@ -1,0 +1,10 @@
+file_format: "1"
+id: esp32keys
+name: esp32keys
+type: board
+arch: xtensa
+features:
+  - keys
+outputs:
+  - ble
+url: https://olkb.com/collections/planck
