@@ -31,6 +31,7 @@
     EXT_POWER {
         compatible = "zmk,ext-power-generic";
         control-gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
+        init-delay-ms = <50>;
     };
 };
 
@@ -50,6 +51,13 @@
     compatible = "nordic,nrf-twi";
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+};
+
+&spi1 {
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
 };
 

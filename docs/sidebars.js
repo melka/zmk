@@ -19,9 +19,11 @@ module.exports = {
       "features/underglow",
       "features/backlight",
       "features/battery",
+      "features/soft-off",
       "features/beta-testing",
     ],
     Behaviors: [
+      "behaviors/index",
       "behaviors/key-press",
       "behaviors/layers",
       "behaviors/misc",
@@ -43,6 +45,7 @@ module.exports = {
       "behaviors/underglow",
       "behaviors/backlight",
       "behaviors/power",
+      "behaviors/soft-off",
     ],
     Codes: [
       "codes/index",
@@ -53,7 +56,6 @@ module.exports = {
       "codes/applications",
       "codes/input-assist",
       "codes/power",
-      "codes/keymap-upgrader",
     ],
     Configuration: [
       "config/index",
@@ -74,7 +76,16 @@ module.exports = {
       "development/clean-room",
       "development/pre-commit",
       "development/documentation",
-      "development/setup",
+      {
+        type: "category",
+        label: "Setup",
+        collapsed: true,
+        items: [
+          "development/setup/index",
+          "development/setup/docker",
+          "development/setup/native",
+        ],
+      },
       "development/build-flash",
       "development/boards-shields-keymaps",
       "development/posix-board",
